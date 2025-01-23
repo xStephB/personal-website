@@ -1,0 +1,51 @@
+<div class="bg-viewer">
+  <div class="text-end p-3 position-sticky top-0">
+    <fa-icon class="h1 text-white cursor-pointer" [icon]="faXmark" (click)="closeAll.emit()"></fa-icon>
+  </div>
+  <div class="text-center">
+    <h5 class="text-secondary-custom m-0">{{ "Conoscimi" | translate }}</h5>
+    <h1 class="text-white fw-bold content-title">{{ "Su di me" | translate }}</h1>
+  </div>
+  <div class="p-3 d-md-flex align-items-md-start justify-content-md-around col-12">
+    <div class="col-md-3 col-12">
+      <img src="assets/img/personal_avatar.png" width="400">
+    </div>
+    <div class="col-md-7 col-12 d-flex flex-column row-gap-4">
+      <h4 class="text-secondary-custom m-0">{{ "Chi sono?" | translate }}</h4>
+      <h2 class="text-white fw-bold content-title m-0">{{ "Sono Nome Cognome, un Junior Full Stack Developer." | translate }}</h2>
+      <span class="text-secondary-custom">{{ "Sono un Full-Stack Developer con sede a Catania.Ho, sin da piccolo, una passione per il mondo dell'informatica, passione che crescendo si è trasformata in curiosità, e che mi ha spinto a interessarmi al settore della programmazione. Aggettivi per descrivermi: socievole, preciso e serio." | translate }}
+      </span>
+      <div class="d-sm-block d-md-flex align-items-sm-start justify-content-sm-between flex-sm-column">
+        <div class="col-md-5 col-12 d-sm-flex flex-sm-column row-gap-sm-2 ">
+          <div class="d-md-flex align-items-md-center col-12">
+            <span class="col-md-3 col-12 text-secondary-custom">{{ "Nome:" | translate }}</span>
+            <span class="col-md-9 col-12 text-white">Stefano Bonnici</span>
+          </div>
+          <div class="d-md-flex align-items-md-center col-12">
+            <span class="col-md-3 col-12 text-secondary-custom">{{ "Età:" | translate }}</span>
+            <span class="col-md-9 col-12 text-white">{{etaAttuale}}</span>
+          </div>
+        </div>
+        <div class="col-md-5 col-12  d-flex flex-column row-gap-2">
+          <div class="d-md-flex align-items-md-center col-12">
+            <span class="col-md-3 col-12 text-secondary-custom">{{ "Email:" | translate }}</span>
+            <span class="col-md-9 col-12 text-white">{{ "stefanobonnici00@gmail.com" }}</span>
+          </div>
+          <div class="d-md-flex align-items-md-center col-12">
+            <span class="col-md-3 col-12 text-secondary-custom">{{ "Città:" | translate }}</span>
+            <span class="col-md-9 col-12 text-white">{{ "Catania (CT), Italia" }}</span>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex col-12 justify-content-around align-items-center">
+        <div class="col-sm-12 col-md-3">
+          <button class="btn btn-success">{{ "Download CV" }}</button>
+        </div>
+        <div class="col-sm-12 col-md-9 d-flex align-items-center column-gap-3 justify-content-end">
+          <a href="https://github.com/xStephB" target="_blank"><fa-icon class="text-white h3" [icon]="faGithub"></fa-icon></a>
+          <a href="https://it.linkedin.com/in/stefano-bonnici-382414198" target="_blank"><fa-icon class="text-white h3" [icon]="faLinkedin"></fa-icon></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+<nav class="navbar">
+  <div class="navbar-container px-2">
+    <div class="navbar-container-content">
+      <div class="navbar-container-content-logo">
+        <div class="logo">Stefano Bonnici</div>
+      </div>
+      <div class="navbar-container-content-pages menuDesktop">
+        <span class="navbar-container-content-pages-link" (click)="viewAbout.emit()">{{ "Chi sono" | translate }}</span>
+        <span class="navbar-container-content-pages-link" (click)="viewResume.emit()">{{ "Carriera" | translate }}</span>
+        <span class="navbar-container-content-pages-link" (click)="viewPortfolio.emit()">{{ "Skills" | translate }}</span>
+        <span class="navbar-container-content-pages-link" (click)="viewContact.emit()">{{ "Contatti" | translate }}</span>
+      </div>
+      <div class="menuMobile">
+        <fa-icon class="text-white h1" [icon]="faBars" (click)="toggleMenu.emit()"></fa-icon>
+      </div>
+    </div>
+  </div>
+</nav>

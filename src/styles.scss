@@ -1,1 +1,331 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+
+:root {
+  --font-family: "Ubuntu";
+  --navbar-height: 4.063rem;
+  --footer-height: 2.063rem;
+  --box-shadow-custom-1: 0px 2px 5px #1b4a5e;
+  --box-shadow-custom-2: 0px -2px 5px #1b4a5e;
+  --primary-color-blue: #fdfdfd;
+}
+
+* {
+  font-family: var(--font-family);
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(to top, #000000, #000000, #000000, #000000);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #222121;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.bg-app {
+  padding-top: calc(var(--navbar-height));
+}
+
+.bg-component {
+  height: calc(100vh - var(--navbar-height));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url("assets/img/home.png");
+  background-position: center;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+.h-100 {
+  height: 100% !important;
+}
+
+.typewriter .animation {
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation:
+    typing 5s steps(40, end) infinite,
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 150% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
+}
+
+.logo {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  color: white;
+}
+
+.text-white{
+  color:white;
+}
+
+.text-rotate{
+  transform: rotate(90deg);
+}
+
+.content-title{
+  line-height: 1.5;
+}
+
+.text-secondary-custom{
+  color: #9f9f9f;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.input-custom{
+  background-color: #161616;
+  border: none;
+  border-bottom: 1px solid #1d1d1d;
+  border-radius: 0;
+  font-size: 15px;
+  height: 44px;
+  padding: 9px 14px;
+}
+
+.input-custom:focus, .input-custom:focus-visible{
+  box-shadow: none;
+  border-bottom: 1px solid var(--primary-color-blue);
+  outline: 0;
+}
+
+.carriera{
+  border-left: 1px solid #fefefe;
+}
+
+.bg-viewer{
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: black;
+  animation-duration: 0.5s;
+  animation-name: animate-fade;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+  overflow: auto;
+}
+
+.grid-cards-custom {
+  display: grid;
+  justify-content: space-around;
+  row-gap: 2rem;
+  grid-template-columns: auto auto;
+}
+
+.card-custom {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  color: #fff;
+  background: transparent;
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 49, 49, 0.5);
+  border-right: 1px solid rgba(0, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(57, 255, 20, 0.5);
+  border-left: 1px solid rgba(255, 255, 113, 0.5);
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em;
+}
+
+.card-custom:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.card-custom:hover > .card-custom:not(:hover) {
+  filter: blur(10px);
+  transform: scale(0.9, 0.9);
+}
+
+.border-animate {
+  position: absolute;
+  border-radius: 100vmax;
+}
+
+.top {
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 5px;
+  background: linear-gradient(
+      90deg,
+      transparent 50%,
+      rgba(255, 49, 49, 0.5),
+      rgb(255, 49, 49)
+  );
+}
+
+.bottom {
+  right: 0;
+  bottom: 0;
+  height: 5px;
+  background: linear-gradient(
+      90deg,
+      rgb(57, 255, 20),
+      rgba(57, 255, 20, 0.5),
+      transparent 50%
+  );
+}
+
+.right {
+  top: 0;
+  right: 0;
+  width: 5px;
+  height: 0;
+  background: linear-gradient(
+      180deg,
+      transparent 30%,
+      rgba(0, 255, 255, 0.5),
+      rgb(0, 255, 255)
+  );
+}
+
+.left {
+  left: 0;
+  bottom: 0;
+  width: 5px;
+  height: 0;
+  background: linear-gradient(
+      180deg,
+      rgb(255, 255, 113),
+      rgba(255, 255, 113, 0.5),
+      transparent 70%
+  );
+}
+
+.top {
+  animation: animateTop 3s ease-in-out infinite;
+}
+
+.bottom {
+  animation: animateBottom 3s ease-in-out infinite;
+}
+
+.right {
+  animation: animateRight 3s ease-in-out infinite;
+}
+
+.left {
+  animation: animateLeft 3s ease-in-out infinite;
+}
+
+@keyframes animateTop {
+  25% {
+    width: 100%;
+    opacity: 1;
+  }
+
+  30%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes animateBottom {
+  0%,
+  50% {
+    opacity: 0;
+    width: 0;
+  }
+
+  75% {
+    opacity: 1;
+    width: 100%;
+  }
+
+  76%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes animateRight {
+  0%,
+  25% {
+    opacity: 0;
+    height: 0;
+  }
+
+  50% {
+    opacity: 1;
+    height: 100%;
+  }
+
+  55%,
+  100% {
+    height: 100%;
+    opacity: 0;
+  }
+}
+
+@keyframes animateLeft {
+  0%,
+  75% {
+    opacity: 0;
+    bottom: 0;
+    height: 0;
+  }
+
+  100% {
+    opacity: 1;
+    height: 100%;
+  }
+}
+
+@keyframes animate-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 576px) {
+  .grid-cards-custom {
+    grid-template-columns: auto;
+  }
+}

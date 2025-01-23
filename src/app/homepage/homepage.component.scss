@@ -1,0 +1,14 @@
+.homepage{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-language{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  row-gap: 2rem;
+}
+
+
