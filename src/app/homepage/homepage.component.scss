@@ -11,4 +11,12 @@
   row-gap: 2rem;
 }
 
+.page-carousel{
+  height: 97vh;
+  padding-top: calc(var(--navbar-height));
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
 

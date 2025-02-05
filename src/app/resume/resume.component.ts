@@ -6,7 +6,6 @@ import {TranslatePipe} from '@ngx-translate/core';
 @Component({
   selector: 'app-resume',
   imports: [
-    FaIconComponent,
     TranslatePipe
   ],
   templateUrl: './resume.component.html',

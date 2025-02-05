@@ -1,4 +1,4 @@
-.scroll-fe {
+.scroll {
   position: relative;
   width: 100vw;
   overflow: hidden;
@@ -7,11 +7,11 @@
   padding: 0;
 }
 
-.m-scroll-fe {
+.m-scroll {
   overflow: hidden;
   height: 100%;
   white-space: nowrap;
-  animation: scrollText 18s infinite linear;
+  animation: scrollText 6s infinite linear;
   margin: 0;
   font-size: 0;
   display: flex;

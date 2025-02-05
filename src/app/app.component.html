@@ -9,7 +9,7 @@
 ></app-navbar>
 <div class="h-100 w-100">
   <div class="bg-app h-100 px-3">
-    <app-homepage></app-homepage>
+    <app-homepage [dataNascita]="dataNascita"></app-homepage>
   </div>
 </div>
 @if(menuMobile){
@@ -39,11 +39,6 @@
     (closeAll)="closeAll()"
   ></app-portfolio>
 }
-<!--@if(showBlog){-->
-<!--  <app-blog-->
-<!--    (closeAll)="closeAll()"-->
-<!--  ></app-blog>-->
-<!--}-->
 @if(showContact){
   <app-contact
     (closeAll)="closeAll()"

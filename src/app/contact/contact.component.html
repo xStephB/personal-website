@@ -1,57 +1,56 @@
 <div class="bg-viewer">
-  <div class="text-end p-3 position-sticky top-0">
-    <fa-icon class="h1 cursor-pointer" [icon]="faXmark" (click)="closeAll.emit()"></fa-icon>
-  </div>
-  <div class="text-center p-3">
-    <h5 class="text-secondary-custom">{{ "Sentiti libero di contattarmi in qualsiasi momento" | translate }}</h5>
-    <h1 class="text-white fw-bold">{{ "Contattami" | translate }}</h1>
-  </div>
-  <div class="col-12 d-md-flex align-items-md-start justify-content-md-around d-sm-block p-3">
-    <div class="col-sm-12 col-md-5 text-center">
-      <h2 class="text-white">{{ "Mandami un messaggio" | translate }}</h2>
-      <p class="text-secondary-custom p-3">{{ "Compila questo form per contattarmi direttmente sulla mia email personale!" | translate }}</p>
-      <div class="d-flex flex-column row-gap-3">
-        <div class="d-md-flex align-items-md-center justify-content-md-between">
-          <input class="input-custom col-md-5 col-12" placeholder="{{'Nome' | translate}}"/>
-          <input class="input-custom col-md-5 col-12" placeholder="{{'Email'}}"/>
-        </div>
-        <input class="input-custom col-12" placeholder="{{ 'Soggetto' | translate }}"/>
-        <input class="input-custom col-12" placeholder="{{ 'Messaggio' | translate }}"/>
-        <div class="text-end">
-          <button class="btn btn-custom-success">{{ "Invia" | translate }}</button>
+  <div class="w-100">
+    <div class="text-center p-3">
+      <h5 class="text-secondary-custom">{{ "Sentiti libero di contattarmi in qualsiasi momento" | translate }}</h5>
+      <h1 class="text-white fw-bold">{{ "Contattami" | translate }}</h1>
+    </div>
+    <div class="col-12 d-md-flex align-items-md-start justify-content-md-around d-sm-block p-3">
+      <div class="col-sm-12 col-md-5 text-center">
+        <h2 class="text-white">{{ "Mandami un messaggio" | translate }}</h2>
+        <p class="text-secondary-custom p-3">{{ "Compila questo form per contattarmi direttmente sulla mia email personale!" | translate }}</p>
+        <div class="d-flex flex-column row-gap-3">
+          <div class="d-md-flex align-items-md-center justify-content-md-between">
+            <input class="input-custom col-md-5 col-12" placeholder="{{'Nome' | translate}}"/>
+            <input class="input-custom col-md-5 col-12" placeholder="{{'Email'}}"/>
+          </div>
+          <input class="input-custom col-12" placeholder="{{ 'Soggetto' | translate }}"/>
+          <input class="input-custom col-12" placeholder="{{ 'Messaggio' | translate }}"/>
+          <div class="text-end">
+            <button class="btn btn-custom-success">{{ "Invia" | translate }}</button>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-sm-12 col-md-5 text-center">
-      <h2 class="text-white">{{ "Informazioni di contatto" | translate }}</h2>
-      <p class="text-secondary-custom p-3">{{ "Se si presenta il progetto giusto, non esitate a contattarmi!" | translate }}</p>
-      <div class="d-flex flex-column row-gap-2">
-        <div class="d-flex align-items-center border-bottom">
-          <fa-icon class="h1 w-25" [icon]="faSignature"></fa-icon>
-          <div class="d-flex flex-column align-items-start">
-            <p class="text-white m-0">{{ "Nome" | translate }}</p>
-            <p class="text-white m-0">Stefano Bonnici</p>
+      <div class="col-sm-12 col-md-5 text-center">
+        <h2 class="text-white">{{ "Informazioni di contatto" | translate }}</h2>
+        <p class="text-secondary-custom p-3">{{ "Se si presenta il progetto giusto, non esitate a contattarmi!" | translate }}</p>
+        <div class="d-flex flex-column row-gap-2">
+          <div class="d-flex align-items-center border-bottom">
+            <fa-icon class="h1 w-25" [icon]="faSignature"></fa-icon>
+            <div class="d-flex flex-column align-items-start">
+              <p class="text-white m-0">{{ "Nome" | translate }}</p>
+              <p class="text-white m-0">Stefano Bonnici</p>
+            </div>
           </div>
-        </div>
-        <div class="d-flex align-items-center border-bottom">
-          <fa-icon class="h1 w-25" [icon]="faLocationCrosshairs"></fa-icon>
-          <div class="d-flex flex-column align-items-start">
-            <p class="text-white m-0">{{ "Località" | translate }}</p>
-            <p class="text-white m-0">Catania (95123), Sicilia.</p>
+          <div class="d-flex align-items-center border-bottom">
+            <fa-icon class="h1 w-25" [icon]="faLocationCrosshairs"></fa-icon>
+            <div class="d-flex flex-column align-items-start">
+              <p class="text-white m-0">{{ "Località" | translate }}</p>
+              <p class="text-white m-0">Catania (95123), Sicilia.</p>
+            </div>
           </div>
-        </div>
-        <div class="d-flex align-items-center border-bottom">
-          <fa-icon class="h1 w-25" [icon]="faPhone"></fa-icon>
-          <div class="d-flex flex-column align-items-start">
-            <p class="text-white m-0">{{ "Chiamami" | translate }}</p>
-            <p class="text-white m-0">+39 349 3694 648</p>
+          <div class="d-flex align-items-center border-bottom">
+            <fa-icon class="h1 w-25" [icon]="faPhone"></fa-icon>
+            <div class="d-flex flex-column align-items-start">
+              <p class="text-white m-0">{{ "Chiamami" | translate }}</p>
+              <p class="text-white m-0">+39 349 3694 648</p>
+            </div>
           </div>
-        </div>
-        <div class="d-flex align-items-center border-bottom">
-          <fa-icon class="h1 w-25" [icon]="faEnvelope"></fa-icon>
-          <div class="d-flex flex-column align-items-start">
-            <p class="text-white m-0">Email</p>
-            <p class="text-white m-0">{{ "stefanobonnici00@gmail.com" }}</p>
+          <div class="d-flex align-items-center border-bottom">
+            <fa-icon class="h1 w-25" [icon]="faEnvelope"></fa-icon>
+            <div class="d-flex flex-column align-items-start">
+              <p class="text-white m-0">Email</p>
+              <p class="text-white m-0">{{ "stefanobonnici00@gmail.com" }}</p>
+            </div>
           </div>
         </div>
       </div>
