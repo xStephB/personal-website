@@ -10,6 +10,7 @@ import {TranslatePipe} from '@ngx-translate/core';
     TranslatePipe
   ],
   templateUrl: './contact.component.html',
+  standalone: true,
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {

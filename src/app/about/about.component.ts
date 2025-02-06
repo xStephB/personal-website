@@ -11,6 +11,7 @@ import {TranslatePipe} from '@ngx-translate/core';
     TranslatePipe
   ],
   templateUrl: './about.component.html',
+  standalone: true,
   styleUrl: './about.component.scss'
 })
 export class AboutComponent implements OnInit{

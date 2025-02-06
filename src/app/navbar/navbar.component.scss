@@ -5,7 +5,7 @@
   width: 100%;
   background: transparent;
   height: var(--navbar-height);
-  box-shadow: var(--box-shadow-custom-1);
+  //box-shadow: var(--box-shadow-custom-1);
   padding: 0 .5rem;
 
   &-container{
@@ -19,12 +19,16 @@
 
       &-logo{
         cursor: pointer;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        text-transform: uppercase;
       }
 
       &-pages{
         cursor: pointer;
         display: flex;
         align-items: center;
+        justify-content: end;
         column-gap: 1rem;
 
         &-link{
@@ -47,13 +51,17 @@
   display: flex;
 }
 
+.delay-1 {
+  animation-delay: 1s;
+}
+
 @media (max-width: 768px) {
   .menuMobile {
     display: block;
   }
 
   .menuDesktop{
-    display: none;
+    display: none!important;
   }
 
   .logo{

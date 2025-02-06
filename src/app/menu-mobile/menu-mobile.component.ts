@@ -10,6 +10,7 @@ import {TranslatePipe} from '@ngx-translate/core';
     TranslatePipe
   ],
   templateUrl: './menu-mobile.component.html',
+  standalone: true,
   styleUrl: './menu-mobile.component.scss'
 })
 export class MenuMobileComponent {
@@ -19,6 +20,7 @@ export class MenuMobileComponent {
   @Output() viewContact = new EventEmitter<void>();
   @Output() viewBlog = new EventEmitter<void>();
   @Output() viewPortfolio = new EventEmitter<void>();
+  @Output() viewPortfolioBackEnd = new EventEmitter<void>();
   @Output() viewResume = new EventEmitter<void>();
   @Output() viewAbout = new EventEmitter<void>();
 

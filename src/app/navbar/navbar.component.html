@@ -1,17 +1,18 @@
 <nav class="navbar">
   <div class="navbar-container px-2">
     <div class="navbar-container-content">
-      <div class="navbar-container-content-logo">
-        <div class="logo">Stefano Bonnici</div>
+      <div class="navbar-container-content-logo col-auto">
+        <div class="logo animate blur delay-1">Stefano Bonnici</div>
       </div>
-      <div class="navbar-container-content-pages menuDesktop">
-        <span class="navbar-container-content-pages-link" (click)="viewAbout.emit()">{{ "Chi sono" | translate }}</span>
-        <span class="navbar-container-content-pages-link" (click)="viewResume.emit()">{{ "Carriera" | translate }}</span>
-        <span class="navbar-container-content-pages-link" (click)="viewPortfolio.emit()">{{ "Skills" | translate }}</span>
-        <span class="navbar-container-content-pages-link" (click)="viewContact.emit()">{{ "Contatti" | translate }}</span>
+      <div class="navbar-container-content-pages menuDesktop col-4">
+        <span class="navbar-container-content-pages-link animate blur delay-1" (click)="viewAbout.emit()">{{ "Chi sono" | translate }}</span>
+        <span class="navbar-container-content-pages-link animate blur delay-1" (click)="viewResume.emit()">{{ "Carriera" | translate }}</span>
+        <span class="navbar-container-content-pages-link animate blur delay-1" (click)="viewPortfolio.emit()">{{ "Skills FE" | translate }}</span>
+        <span class="navbar-container-content-pages-link animate blur delay-1" (click)="viewPortfolioBackEnd.emit()">{{ "Skills BE" | translate }}</span>
+        <span class="navbar-container-content-pages-link animate blur delay-1" (click)="viewContact.emit()">{{ "Contatti" | translate }}</span>
       </div>
-      <div class="menuMobile">
-        <fa-icon class="h1" [icon]="faBars" (click)="toggleMenu.emit()"></fa-icon>
+      <div class="menuMobile col-auto">
+        <fa-icon class="h1 animate blur delay-1" [icon]="faBars" (click)="toggleMenu.emit()"></fa-icon>
       </div>
     </div>
   </div>

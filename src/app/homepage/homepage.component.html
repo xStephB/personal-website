@@ -1,22 +1,39 @@
 <div class="bg-component">
   <div class="homepage w-100 h-100">
-    <div class="card-language col-1 py-3">
-      <h4 class="text-white text-rotate cursor-pointer" (click)="changeToIta()">{{ "ITA" | translate }}</h4>
-      <h4 class="text-white text-rotate cursor-pointer" (click)="changeToEng()">{{ "ENG" | translate }}</h4>
-    </div>
-    <div class="d-flex align-items-center text-white col-10">
-      <div class="typewriter">
-        <h1>{{ "Ciao, mi chiamo" | translate }}</h1>
-        <h1 class="animation">Stefano Bonnici</h1>
+    <div class="d-flex flex-column justify-content-center text-white col-12">
+      <div class="col-12 d-flex align-items-center">
+        <div class="animate full-width col-12">
+          <div class="two animate slide delay-3 text-center w-100">
+            <div class="container-animate">
+              <div class="title">
+                <h1>FULL STACK DEVELOPER</h1>
+              </div>
+              <div class="desktop">
+                <div class="base"></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="card-language col-1 py-3">
-      <a href="https://github.com/xStephB" target="_blank">
-        <fa-icon class="h2" [icon]="faGithub"></fa-icon>
-      </a>
-      <a href="https://it.linkedin.com/in/stefano-bonnici-382414198" target="_blank">
-        <fa-icon class="h2" [icon]="faLinkedin"></fa-icon>
-      </a>
+    <div class="d-flex align-items-center justify-content-center column-gap-3 position-absolute bottom-0 left-0 right-0 w-webkit-fill">
+      <div class="col-3 d-flex align-items-center justify-content-start column-gap-3">
+        <span class="text-white cursor-pointer animate roll delay-1"
+              (click)="changeToIta()">{{ "ITA" | translate }}</span>
+        <span class="text-white cursor-pointer animate roll delay-2"
+              (click)="changeToEng()">{{ "ENG" | translate }}</span>
+      </div>
+      <div class="col-4 text-center">
+        <small class="text-white animate blur delay-4">Stefano Bonnici. All rights reserved.</small>
+      </div>
+      <div class="d-flex align-items-center justify-content-end column-gap-3 col-3">
+        <a href="https://github.com/xStephB" target="_blank" class="animate roll delay-4">
+          <fa-icon [icon]="faGithub"></fa-icon>
+        </a>
+        <a href="https://it.linkedin.com/in/stefano-bonnici-382414198" target="_blank" class="animate roll delay-5">
+          <fa-icon [icon]="faLinkedin"></fa-icon>
+        </a>
+      </div>
     </div>
   </div>
 </div>

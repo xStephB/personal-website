@@ -4,8 +4,9 @@ import {HomepageComponent} from './homepage';
 import {ContactComponent} from './contact/contact.component';
 import {PortfolioComponent} from './portfolio/portfolio.component';
 import {ResumeComponent} from './resume/resume.component';
-import {AboutComponent} from './about/about.component';
 import {MenuMobileComponent} from './menu-mobile/menu-mobile.component';
+import {PortfolioBackendComponent} from './portfolio-backend/portfolio-backend.component';
+import {AboutComponent} from './about/about.component';
 
 @Component({
   selector: 'app-root',
@@ -15,10 +16,12 @@ import {MenuMobileComponent} from './menu-mobile/menu-mobile.component';
     ContactComponent,
     PortfolioComponent,
     ResumeComponent,
-    AboutComponent,
-    MenuMobileComponent
+    MenuMobileComponent,
+    PortfolioBackendComponent,
+    AboutComponent
   ],
   templateUrl: './app.component.html',
+  standalone: true,
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
@@ -29,6 +32,7 @@ export class AppComponent {
   showAbout = false;
   showResume = false;
   showPortfolio = false;
+  showPortfolioBackEnd = false;
   menuMobile = false;
 
   viewContact() {
@@ -51,6 +55,10 @@ export class AppComponent {
     this.showPortfolio = true;
   }
 
+  viewPortfolioBackEnd() {
+    this.showPortfolioBackEnd = true;
+  }
+
   toggleMenu() {
     this.menuMobile = !this.menuMobile;
   }
@@ -61,6 +69,7 @@ export class AppComponent {
     this.showBlog = false;
     this.showAbout = false;
     this.showPortfolio = false;
+    this.showPortfolioBackEnd = false;
     this.showResume = false;
   }
 }

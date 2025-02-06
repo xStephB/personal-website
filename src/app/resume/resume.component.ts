@@ -10,6 +10,7 @@ import {TranslatePipe} from '@ngx-translate/core';
     TranslatePipe
   ],
   templateUrl: './resume.component.html',
+  standalone: true,
   styleUrl: './resume.component.scss'
 })
 export class ResumeComponent {

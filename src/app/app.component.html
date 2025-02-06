@@ -3,13 +3,14 @@
   (viewContact)="viewContact()"
   (viewBlog)="viewBlog()"
   (viewPortfolio)="viewPortfolio()"
+  (viewPortfolioBackEnd)="viewPortfolioBackEnd()"
   (viewResume)="viewResume()"
   (viewAbout)="viewAbout()"
   (toggleMenu)="toggleMenu()"
 ></app-navbar>
 <div class="h-100 w-100">
   <div class="bg-app h-100 px-3">
-    <app-homepage></app-homepage>
+    <app-homepage [dataNascita]="dataNascita"></app-homepage>
   </div>
 </div>
 @if(menuMobile){
@@ -18,6 +19,7 @@
     (viewContact)="viewContact()"
     (viewBlog)="viewBlog()"
     (viewPortfolio)="viewPortfolio()"
+    (viewPortfolioBackEnd)="viewPortfolioBackEnd()"
     (viewResume)="viewResume()"
     (viewAbout)="viewAbout()"
     (toggleMenu)="toggleMenu()"
@@ -38,6 +40,11 @@
   <app-portfolio
     (closeAll)="closeAll()"
   ></app-portfolio>
+}
+@if(showPortfolioBackEnd){
+  <app-portfolio-backend
+    (closeAll)="closeAll()"
+  ></app-portfolio-backend>
 }
 <!--@if(showBlog){-->
 <!--  <app-blog-->
